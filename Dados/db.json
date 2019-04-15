@@ -1,0 +1,17 @@
+{
+	"cnes_ativonone":[
+	{
+		"co_cnes" : 6577687,
+		"co_ibge" : "292240",
+		"no_fantasia" : "SECRETARIA DE SAUDE DE MUTUIPE",
+		"ds_tipo_unidade" : "CENTRAL DE GESTAO EM SAUDE",
+		"tp_gestao" : "M",
+		"no_logradouro" : "RUA RUY BARBOSA",
+		"nu_endereco" : "S/N",
+		"no_bairro" : "CENTRO",
+		"co_cep" : "45480000",
+		"uf" : "BA",
+		"municipio" : "MutuÃ­pe",
+		"nu_telefone" : ""
+	}
+]}
