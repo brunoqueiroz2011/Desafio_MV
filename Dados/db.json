@@ -198,3 +198,17 @@ db.cnes.insert([
 	"nu_telefone": ""
 }
 ])
+
+
+co_cnes:6578004
+co_ibge:250160
+no_fantasia:UNIDADE BASICA DE SAUDE ASSENTAMENTO RIACHO DA CRUZ ESF IV
+ds_tipo_unidade:CENTRO DE SAUDE/UNIDADE BASICA
+tp_gestao:M
+no_logradouro:ASSENTAMENTO RIACHO DA CRUZ
+nu_endereco:0000000000
+no_bairro:ZONA RURAL
+co_cep:58170000
+uf:PB
+municipio:Barra de Santa Rosa
+nu_telefone:
