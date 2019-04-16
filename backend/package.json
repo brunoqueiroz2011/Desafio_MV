@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon",
     "production": "pm2 start loader.js --name backend_dasafio_mv",
-    "startDB" : "node readcsv.js"
+    "startDB": "node readcsv.js"
   },
   "author": "Bruno G. Queiroz",
   "license": "ISC",
@@ -14,6 +14,7 @@
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
     "express-query-int": "^3.0.0",
+    "fast-csv": "^2.4.1",
     "lodash": "^4.17.11",
     "mongoose": "^5.5.1",
     "mongoose-paginate": "^5.0.3",
