@@ -8,4 +8,8 @@ module.exports = function(server){
 
     const cnesService = require('../api/cnes/cnesService')
     cnesService.register(router, '/cnes')
+
+    const cnesSummaryService = require('../api/cnesSummary/cnesSummaryService')
+    router.route('/cnesgrouptbgestao').get(cnesSummaryService.getCountTbGestao)
+    router.route('/cnesgroupUF').get(cnesSummaryService.getCountUF)
 }
