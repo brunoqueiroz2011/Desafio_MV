@@ -5,7 +5,8 @@
   "main": "loader.js",
   "scripts": {
     "dev": "nodemon",
-    "production": "pm2 start loader.js --name backend_dasafio_mv"
+    "production": "pm2 start loader.js --name backend_dasafio_mv",
+    "startDB" : "node readcsv.js"
   },
   "author": "Bruno G. Queiroz",
   "license": "ISC",
