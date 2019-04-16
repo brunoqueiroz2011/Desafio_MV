@@ -1,7 +1,10 @@
 # Desafio da Saúde MV
 Esse software server para ler e apresentar dados do Cadastro Nacional de Estabelecimentos de Saúde (CNES) no Brasil.
 
-**OBS**: caso sinta dificuldade no passo-a-passo segue o link do [Tutorial](https://www.youtube.com/)
+**OBS**: caso sinta dificuldade no passo-a-passo segue o link do [Tutorial]()
+
+## Documentação do projeto.
+A documentação do projeto se encontra no [Drive](https://docs.google.com/document/d/12jiaFyFmCxaV_yP61ug3WU68jDWK_vmNl_BLveDg5Lk/edit?usp=sharing)
 
 ## Lista de programas que deve conter na sua máquina.
 1. [NodeJs](https://nodejs.org/en/)
