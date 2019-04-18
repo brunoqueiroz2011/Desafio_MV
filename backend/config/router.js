@@ -12,4 +12,5 @@ module.exports = function(server){
     const cnesSummaryService = require('../api/cnesSummary/cnesSummaryService')
     router.route('/cnesgrouptbgestao').get(cnesSummaryService.getCountTbGestao)
     router.route('/cnesgroupUF').get(cnesSummaryService.getCountUF)
+    router.route('/cnesfirtsdocs/:limit').get(cnesSummaryService.getFirstDocs)
 }
