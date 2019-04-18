@@ -26,10 +26,15 @@ Com isso todas as dependencias que o projeto esta utilizando serão instaladas e
 4. Execute o comando: _npm run statDB_ isso fará que o nodejs leia o arquivo csv *cnes_ativonone.csv* e insira os dados no banco.
 5. Execute o comando: _npm run dev_ isso iniciara a aplicação de modo desenvolvedor.
 
-*OBS*: o passo 4 só precisa ser executado uma vez ou seja, caso não seja a sua primeira vez inicializando o projeto pode pular o passo 4.
+**OBS**: o passo 4 só precisa ser executado uma vez ou seja, caso não seja a sua primeira vez inicializando o projeto pode pular o passo 4.
 
 Com isso o backend da aplicação já esta rodando e todos os dados do csv estão inseridos no banco de dados.
 
 ## Frontend
 
 ### Comandos para instalar as dependencias antes de executar o código fonte.
+1. Abra o prompt de comandos.
+2. Acesse a pasta frontend do projeto onde você salvou o clone do projeto.
+3. Execute o comando: _npm install_ isso instalará todas as dependencias que a aplicação do frontend precisa.
+4. Execute o comando: _npm start_ isso iniciará a aplicação frontend.
+5. Abra o seu navegador padrão acesse a URL: http://localhost:4200
