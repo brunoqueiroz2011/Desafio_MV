@@ -6,7 +6,7 @@ Esse software server para ler e apresentar dados do Cadastro Nacional de Estabel
 ## Documentação do projeto.
 A documentação do projeto se encontra no [Drive](https://docs.google.com/document/d/12jiaFyFmCxaV_yP61ug3WU68jDWK_vmNl_BLveDg5Lk/edit?usp=sharing)
 
-##Backend
+## Backend
 
 ### Lista de programas que deve conter na sua máquina.
 1. [NodeJs](https://nodejs.org/en/)
@@ -30,6 +30,6 @@ Com isso todas as dependencias que o projeto esta utilizando serão instaladas e
 
 Com isso o backend da aplicação já esta rodando e todos os dados do csv estão inseridos no banco de dados.
 
-##Frontend
+## Frontend
 
 ### Comandos para instalar as dependencias antes de executar o código fonte.
