@@ -1,0 +1,57 @@
+<section class="content-header darkBrown">
+  <h1>
+      Lista de CNES
+  </h1>
+</section>
+<section class="content">
+  <section class="invoice">
+      <div class="row">
+          <div class="col-xs-12">
+            <div class="box">
+              <div class="box-header">
+                <h3 class="box-title darkBrown">Tabela de CNES</h3>
+  
+                <div class="box-tools">
+                  <div class="input-group input-group-sm" style="width: 150px;">                    
+                  </div>
+                </div>
+              </div>
+              <!-- /.box-header -->
+              <div class="box-body table-responsive no-padding">
+                <table class="table table-hover darkBrown">
+                  <tr>                    
+                    <th>CNES</th>
+                    <th>IBGE</th>
+                    <th>Nome Fantasia</th>
+                    <th>Tipo Unidade</th>
+                    <th>Gestão</th>
+                    <th>Endereço</th>
+                    <th>Numero</th>
+                    <th>CEP</th>
+                    <th>UF</th>
+                    <th>Municipio</th>
+                    <th>Telefone</th>                    
+                  </tr>
+                  <tr *ngFor="let cnesList of cnesLists">
+                    <td>{{cnesList.co_cnes}}</td>
+                    <td>{{cnesList.co_ibge}}</td>
+                    <td>{{cnesList.no_fantasia}}</td>
+                    <td>{{cnesList.ds_tipo_unidade}}</td>
+                    <td>{{cnesList.tp_gestao}}</td>
+                    <td>{{cnesList.no_logradouro}}</td>
+                    <td>{{cnesList.nu_endereco}}</td>
+                    <td>{{cnesList.co_cep}}</td>
+                    <td>{{cnesList.uf}}</td>
+                    <td>{{cnesList.municipio}}</td>
+                    <td>{{cnesList.nu_telefone}}</td>
+                  </tr>                  
+                </table>
+              </div>              
+              <!-- /.box-body -->
+            </div>
+            <button class="btn btn-primary" (click)="moreRecords()"> Mais 10 registros</button>
+            <!-- /.box -->
+          </div>
+        </div>
+  </section>
+</section>
