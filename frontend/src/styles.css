@@ -261,3 +261,26 @@ body {
 .has-error-block {
   color: #dd4b39;
 }
+
+.cor15{
+  color: #fff !important;
+  background-color: #208c81 !important
+}
+.corazul{
+  color: #02CADA !important;    
+}
+.ligthBrown{
+  color: #DA6F0D !important;
+}
+.cor-li{
+  color: #DA6F0D !important;
+  background-color: #DA6F0D !important
+}
+.darkBrown{
+  color: #104e70 !important;        
+}
+.btnColor{
+  color: #fff !important;
+  background-color: #DA6F0D !important;
+  border-color: #510E05 !important;
+}
