@@ -7,9 +7,9 @@ Cnes.route('count', function(req, res, next){
     Cnes.count(function(error, value){
         if(error){
             res.status(500).json({errors: [error]})
-        }else{
-            res.json({value})
+            return;
         }
+        res.json({value})
     })
 })
 

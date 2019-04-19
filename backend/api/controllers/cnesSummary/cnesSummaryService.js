@@ -1,5 +1,5 @@
 const _ = require('lodash')
-const Cnes = require('../cnes/cnes')
+const Cnes = require('../models/cnes')
 
 function getFirstDocs(req, res){            
     limit = parseInt(req.params.limit)        
@@ -7,38 +7,38 @@ function getFirstDocs(req, res){
     function(error, result){                
            if(error) {
                res.status(500).json({errors: [error]})
-           }else{               
-               res.json(result)
+               return;
            }
+           res.json(result)
     }
     ).limit(limit)    
 }
 
 
-function getCountTbGestao(req, res){    
+function getCountTypeManagement(req, res){    
     Cnes.aggregate([{$group: {_id: "$tp_gestao", count:{$sum:1}}}]
     ,function(error, result){
         console.log(result)
            if(error) {
                res.status(500).json({errors: [error]})
-           }else{               
-               res.json(result)
+               return;
            }
+           res.json(result)
         }
     )
 }
 
-function getCountUF(req, res){    
+function getCountStates(req, res){    
     Cnes.aggregate([{$group: {_id: "$uf", count:{$sum:1}}}]
     ,function(error, result){
         console.log(result)
            if(error) {
                res.status(500).json({errors: [error]})
-           }else{               
-               res.json(result)
-           }
+               return;
+            }
+            res.json(result)
         }
     )
 }
 
-module.exports = {getFirstDocs, getCountTbGestao, getCountUF}
+module.exports = {getFirstDocs, getCountTypeManagement, getCountStates}
