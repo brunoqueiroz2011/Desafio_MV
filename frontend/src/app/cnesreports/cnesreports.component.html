@@ -1,0 +1,15 @@
+<section class="content-header darkBrown">
+  <h1>
+      Dashboard
+  </h1>
+</section>
+<section class="content">
+  <div class="jumbotron welcome-jumbotron">
+    <div *ngIf="chartBar" class="chartbar">
+      <canvas id="canvas">{{ chartBar }}</canvas>
+    </div>
+    <div *ngIf="chartPie" class="chartpie">
+      <canvas id="canvas2">{{ chartBar }}</canvas>
+    </div>
+  </div>  
+</section>
