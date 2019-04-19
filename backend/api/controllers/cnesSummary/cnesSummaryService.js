@@ -1,5 +1,5 @@
 const _ = require('lodash')
-const Cnes = require('../models/cnes')
+const Cnes = require('../../models/cnes')
 
 function getFirstDocs(req, res){            
     limit = parseInt(req.params.limit)        

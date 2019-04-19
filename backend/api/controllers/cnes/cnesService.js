@@ -1,4 +1,4 @@
-const Cnes = require('./cnes')
+const Cnes = require('../../models/cnes')
 
 Cnes.methods(['get','post','put','delete'])
 Cnes.updateOptions({new: true, runValidators: true})
