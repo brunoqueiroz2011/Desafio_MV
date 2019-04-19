@@ -4,7 +4,6 @@ import { CnesStateService } from 'app/cnesstate/cnesstate.service';
 import { CnesTypesService } from 'app/cnestipos/cnestypes.service';
 import { CnesState } from 'app/cnesstate/cnesstate.model';
 import { Chart } from 'chart.js'
-import { CnesChartjs } from './chartjs.model';
 import { CnesTypes } from 'app/cnestipos/cnestypes.model';
 
 @Component({
@@ -19,7 +18,6 @@ export class CnesreportsComponent implements OnInit {
   chartBar = []  
   chartPie = []  
   cnesTotalCount: number
-  cnesChartjs : CnesChartjs
 
   constructor(private cnesListService: CnesListService,
               private cnesStateService: CnesStateService,
