@@ -14,6 +14,7 @@ import { CnesstateComponent } from './cnesstate/cnesstate.component';
 import { CnesStateService } from './cnesstate/cnesstate.service';
 import { CneslistComponent } from './cneslist/cneslist.component';
 import { CnesListService } from './cneslist/cneslist.service';
+import { CnesreportsComponent } from './cnesreports/cnesreports.component';
 
 
 
@@ -24,7 +25,8 @@ import { CnesListService } from './cneslist/cneslist.service';
     HomeComponent,
     CnestiposComponent,
     CnesstateComponent,
-    CneslistComponent
+    CneslistComponent,
+    CnesreportsComponent
   ],
   imports: [
     BrowserModule,
