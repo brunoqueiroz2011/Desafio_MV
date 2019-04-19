@@ -14,4 +14,9 @@ export class CnesListService{
                         .map(res => res.json())
                         .map(cnesList => cnesList)
     }
+
+    getTotalCount():Observable<number>{
+        return this.http.get(`${MEAT_API}/api/cnes/count`)
+                        .map(res => res.json())                        
+    }
 }
