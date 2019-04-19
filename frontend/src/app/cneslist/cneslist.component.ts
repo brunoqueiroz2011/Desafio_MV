@@ -20,7 +20,7 @@ export class CneslistComponent implements OnInit {
     this.limit = 10
     this.cnesListService.getQtdListCnes(this.cnesLists,this.limit).subscribe(cnesList => this.cnesLists = cnesList)
 
-    this.cnesListService.getTotalCount(this.cnesCount).subscribe(cnesCount => this.cnesCount = cnesCount['value'])
+    this.cnesListService.getTotalCount().subscribe(cnesCount => this.cnesCount = cnesCount['value'])
   }
 
   moreRecords(){
