@@ -10,6 +10,7 @@
             <div class="box">
               <div class="box-header">
                 <h3 class="box-title darkBrown">Contagem Total de CNES: {{cnesCount | number}}</h3>
+                <button class="btn btn-primary pull-right" (click)="moreRecords()"> Mais 10 registros</button>
                 <div class="box-tools">
                   <div class="input-group input-group-sm" style="width: 150px;"> 
                   </div>
@@ -62,8 +63,7 @@
                 </ul>
               </div>
             </div>
-          </div>
-            <button class="btn btn-primary" (click)="moreRecords()"> Mais 10 registros</button>
+          </div>            
             <!-- /.box -->
           </div>
         </div>
