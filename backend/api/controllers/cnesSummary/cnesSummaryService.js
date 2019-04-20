@@ -9,16 +9,15 @@ function getFirstDocs(req, res){
                res.status(500).json({errors: [error]})
                return;
            }
-           res.json(result)
+           res.json({"result":result})
     }
-    ).limit(limit)    
+    ).skip(limit).limit(10)    
 }
 
 
 function getCountTypeManagement(req, res){    
     Cnes.aggregate([{$group: {_id: "$tp_gestao", count:{$sum:1}}}]
-    ,function(error, result){
-        console.log(result)
+    ,function(error, result){        
            if(error) {
                res.status(500).json({errors: [error]})
                return;
@@ -30,8 +29,7 @@ function getCountTypeManagement(req, res){
 
 function getCountStates(req, res){    
     Cnes.aggregate([{$group: {_id: "$uf", count:{$sum:1}}}]
-    ,function(error, result){
-        console.log(result)
+    ,function(error, result){        
            if(error) {
                res.status(500).json({errors: [error]})
                return;
