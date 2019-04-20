@@ -11,21 +11,21 @@ import { listenToElementOutputs } from '@angular/core/src/view/element';
 export class CneslistComponent implements OnInit {
 
   cnesLists : CnesList
-  limit : number  
+  limit: number    
   cnesCount : number
 
   constructor(private cnesListService: CnesListService) { }
 
-  ngOnInit() {
-    this.limit = 10
-    this.cnesListService.getQtdListCnes(this.cnesLists,this.limit).subscribe(cnesList => this.cnesLists = cnesList)
-
-    this.cnesListService.getTotalCount().subscribe(cnesCount => this.cnesCount = cnesCount['value'])
+  ngOnInit() {     
+    this.limit = 0 
+    this.cnesListService.getQtdListCnes(this.cnesLists,this.limit).subscribe(cnesList => {
+      this.cnesLists = cnesList['result']
+    })
+    this.cnesListService.getTotalCount().subscribe(cnesCount => this.cnesCount = cnesCount['value'])    
   }
 
-  moreRecords(){
+  moreRecords(){    
     this.limit += 10
-    this.cnesListService.getQtdListCnes(this.cnesLists,this.limit).subscribe(cnesList => this.cnesLists = cnesList)
+    this.cnesListService.getQtdListCnes(this.cnesLists,this.limit).subscribe(cnesList => this.cnesLists = cnesList['result'])
   }
-
 }
