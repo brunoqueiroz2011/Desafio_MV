@@ -10,12 +10,13 @@
             <div class="box">
               <div class="box-header">
                 <h3 class="box-title darkBrown">Contagem Total de CNES: {{cnesCount | number}}</h3>
-  
                 <div class="box-tools">
-                  <div class="input-group input-group-sm" style="width: 150px;">                    
+                  <div class="input-group input-group-sm" style="width: 150px;"> 
                   </div>
                 </div>
-              </div>
+              </div>              
+              <div *ngIf="!cnesLists"><img src="../../assets/img/OFuO.gif" style="margin-left: 12%;"></div>
+              <div *ngIf="cnesLists">
               <!-- /.box-header -->
               <div class="box-body table-responsive no-padding">
                 <table class="table table-hover darkBrown">
@@ -48,10 +49,23 @@
                 </table>
               </div>              
               <!-- /.box-body -->
+              <div class="box-footer clearfix">
+                <ul class="pagination pagination-sm no-margin pull-right">
+                  <!--<li><a (click)="previousPages()">&laquo;</a></li>
+                  <li><a (click)="moreRecords(limit)">1</a></li>
+                  <li><a (click)="moreRecords(limit)">{{page[1]}}</a></li>
+                  <li><a (click)="moreRecords(limit)">{{page[2]}}</a></li>
+                  <li><a (click)="moreRecords(limit)">{{page[3]}}</a></li>
+                  <li><a (click)="moreRecords(limit)">{{page[4]}}</a></li>
+                  <li><a (click)="moreRecords(limit)">{{page[5]}}</a></li>
+                  <li><a (click)="nextPages()">&raquo;</a></li>-->
+                </ul>
+              </div>
             </div>
+          </div>
             <button class="btn btn-primary" (click)="moreRecords()"> Mais 10 registros</button>
             <!-- /.box -->
           </div>
         </div>
-  </section>
+  </section> 
 </section>
